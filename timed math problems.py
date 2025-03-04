@@ -31,10 +31,10 @@ def generate_problem():
         else:
             if_divisible = False
             
-    answer = eval(expr)
+    answer = int(eval(expr))
     user_input = input(f'Problem #{problem_number}: {expr} = ')
     while True:
-        if int(user_input) == int(answer):
+        if str(user_input) == str(answer):
             return 1
         else:
             print('Try again!')
